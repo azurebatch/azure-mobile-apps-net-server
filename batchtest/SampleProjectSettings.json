@@ -15,7 +15,7 @@
                 "source": "bin\\debug"
             },
             {
-                "source": "batchtest\\SampleVMSetup.ps1"
+                "source": "batchtest\\SampleVMSetup.cmd"
             }
         ]
     },

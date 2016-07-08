@@ -7,7 +7,7 @@
         "targetOSVersion": "*",
         "vmSize": "small",
         "poolKeepAlive": false,
-        "vmSetupCommandLine": "cmd /c powershell %AZ_BATCH_NODE_SHARED_DIR%\\SampleVMSetup.ps1"
+        "vmSetupCommandLine": "cmd /c %AZ_BATCH_NODE_SHARED_DIR%\\SampleVMSetup.cmd"
     },
     "resources": {
         "localResources": [

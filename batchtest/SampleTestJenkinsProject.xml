@@ -57,9 +57,9 @@
       <thresholds>
         <org.jenkinsci.plugins.xunit.threshold.FailedThreshold>
           <unstableThreshold>48</unstableThreshold>
-          <unstableNewThreshold>0</unstableNewThreshold>
-          <failureThreshold>0</failureThreshold>
-          <failureNewThreshold>0</failureNewThreshold>
+          <unstableNewThreshold>48</unstableNewThreshold>
+          <failureThreshold>48</failureThreshold>
+          <failureNewThreshold>48</failureNewThreshold>
         </org.jenkinsci.plugins.xunit.threshold.FailedThreshold>
         <org.jenkinsci.plugins.xunit.threshold.SkippedThreshold>
           <unstableThreshold>0</unstableThreshold>

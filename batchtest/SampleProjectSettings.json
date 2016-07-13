@@ -6,7 +6,7 @@
         "osFamily": "4",
         "targetOSVersion": "*",
         "vmSize": "small",
-        "poolKeepAlive": true,
+        "poolKeepAlive": false,
         "vmSetupCommandLine": "cmd /c %AZ_BATCH_NODE_SHARED_DIR%\\SampleVMSetup.cmd"
     },
     "resources": {

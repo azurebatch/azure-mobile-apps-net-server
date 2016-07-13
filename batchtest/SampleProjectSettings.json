@@ -12,7 +12,7 @@
     "resources": {
         "localResources": [
             {
-                "source": "batchtest\\SampleVMSetup.cmd"
+                "source": "batchtest/SampleVMSetup.cmd"
             }
         ],
         "azureStorageBlobs": [

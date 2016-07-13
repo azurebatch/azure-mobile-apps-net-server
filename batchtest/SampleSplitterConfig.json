@@ -33,12 +33,6 @@
                 ]
             },
             {
-                "name": "Entity Test",
-                "commands" : [
-                    "$xunitPath $binaryFolder$Microsoft.Azure.Mobile.Server.Entity.Test.dll $outputResult$"
-                ]
-            },
-            {
                 "name": "Home Test",
                 "commands" : [
                     "$xunitPath $binaryFolder$Microsoft.Azure.Mobile.Server.Home.Test.dll $outputResult$"

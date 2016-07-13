@@ -12,10 +12,14 @@
     "resources": {
         "localResources": [
             {
-                "source": "bin\\debug"
-            },
-            {
                 "source": "batchtest\\SampleVMSetup.cmd"
+            }
+        ],
+        "azureStorageBlobs": [
+            {
+                "blob": "https://jenkinsparallelbatch.blob.core.windows.net/azure-mobile-apps-net-server/azure-mobile-apps-net-server-bin.zip",
+                "sas": "",
+                "unzip": true
             }
         ]
     },

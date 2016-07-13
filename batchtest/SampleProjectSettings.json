@@ -27,6 +27,6 @@
         "resultFilePatterns": [
             "*.xml"
         ],
-        "resultFilesSaveToFolder": "azurebatchtemp\\results"
+        "resultFilesSaveToFolder": "azurebatchtemp/results"
     }
 }

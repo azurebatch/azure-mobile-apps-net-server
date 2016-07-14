@@ -1,0 +1,32 @@
+{
+    "version": "0.1",
+    "vmConfigs": {
+        "numVMs": 1,
+        "maxTasksPerNode": 1,
+        "osFamily": "4",
+        "targetOSVersion": "*",
+        "vmSize": "small",
+        "poolKeepAlive": false,
+        "vmSetupCommandLine": "cmd /c %AZ_BATCH_NODE_SHARED_DIR%\\SampleVMSetup.cmd"
+    },
+    "resources": {
+        "localResources": [
+            {
+                "source": "batchtest/SampleVMSetup.cmd"
+            }
+        ],
+        "azureStorageBlobs": [
+            {
+                "blob": "https://jenkinsparallelbatch.blob.core.windows.net/azure-mobile-apps-net-server/azure-mobile-apps-net-server-bin.zip",
+                "sas": "",
+                "unzip": true
+            }
+        ]
+    },
+    "testConfigs": {
+        "resultFilePatterns": [
+            "*.xml"
+        ],
+        "resultFilesSaveToFolder": "azurebatchtemp/results"
+    }
+}

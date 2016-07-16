@@ -7,7 +7,7 @@
         "targetOSVersion": "*",
         "vmSize": "small",
         "poolKeepAlive": false,
-        "vmSetupCommandLine": "cmd /c %AZ_BATCH_JOB_PREP_WORKING_DIR%\\SampleVMSetup.cmd"
+        "vmSetupCommandLine": "cmd /c %AZ_BATCH_NODE_SHARED_DIR%\\%AZ_BATCH_JOB_ID%\\SampleVMSetup.cmd"
     },
     "resources": {
         "localResources": [

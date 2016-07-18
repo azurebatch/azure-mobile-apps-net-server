@@ -3,11 +3,11 @@
     "taskCommandDictionary":[
         {
             "key": "$xunitPath",
-            "value": "%AZ_BATCH_NODE_SHARED_DIR%\\xunit.runner.console.2.1.0\\tools\\xunit.console.exe"
+            "value": "%AZ_BATCH_NODE_SHARED_DIR%\\%AZ_BATCH_JOB_ID%\\xunit.runner.console.2.1.0\\tools\\xunit.console.exe"
         },
         {
             "key": "$binaryFolder$",
-            "value": "%AZ_BATCH_NODE_SHARED_DIR%\\azure-mobile-apps-net-server-bin\\Debug\\"
+            "value": "%AZ_BATCH_NODE_SHARED_DIR%\\%AZ_BATCH_JOB_ID%\\azure-mobile-apps-net-server-bin\\Debug\\"
         },
         {
             "key": "$outputResult$",

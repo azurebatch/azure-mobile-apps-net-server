@@ -1,0 +1,37 @@
+{
+    "version": "0.1",
+    "vmConfigs": {
+        "numVMs": 2,
+        "maxTasksPerNode": 1,
+        "vmSize": "Standard_A1",
+        "virtualMachineConfig": { 
+            "publisher": "MicrosoftWindowsServer",
+            "offer": "WindowsServer",
+            "sku": "2012-R2-Datacenter",
+            "version": "latest",
+            "nodeAgentSKUId": "batch.node.windows amd64"
+        },
+        "poolKeepAlive": false,
+        "vmSetupCommandLine": "cmd /c %AZ_BATCH_NODE_SHARED_DIR%\\%AZ_BATCH_JOB_ID%\\SampleVMSetup.cmd"
+    },
+    "resources": {
+        "localResources": [
+            {
+                "source": "batchtest/SampleVMSetup.cmd"
+            }
+        ],
+        "azureStorageBlobs": [
+            {
+                "blob": "https://jenkinsparallelbatch.blob.core.windows.net/azure-mobile-apps-net-server/azure-mobile-apps-net-server-bin.zip",
+                "sas": "",
+                "unzip": true
+            }
+        ]
+    },
+    "testConfigs": {
+        "resultFilePatterns": [
+            "*.xml"
+        ],
+        "resultFilesSaveToFolder": "azurebatchtemp/results"
+    }
+}
